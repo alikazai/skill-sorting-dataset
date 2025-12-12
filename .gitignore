@@ -1,0 +1,29 @@
+# Binaries
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+
+# Go build cache & modules
+/bin/
+/build/
+/dist/
+vendor/
+
+# IDEs/editors
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+
+# Ignore large dataset
+dataset/job_skill.csv
