@@ -26,4 +26,4 @@ vendor/
 .DS_Store
 
 # Ignore large dataset
-dataset/job_skill.csv
+dataset/job_skills.csv

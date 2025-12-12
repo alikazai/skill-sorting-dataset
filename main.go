@@ -51,4 +51,19 @@ func main() {
 	elapsed := time.Since(start)
 	fmt.Printf("Duration: %vms\n", elapsed.Milliseconds())
 	fmt.Printf("Duration: %v\n", elapsed)
+
+	skills := map[string]bool{}
+	skillCount := 0
+
+	for _, v := range items {
+		for _, skill := range v.Skills {
+			skillCount++
+			skills[skill] = true
+		}
+	}
+
+	fmt.Println("Unique skills count:", len(skills))
+	fmt.Println("Total skills count:", skillCount)
+	fmt.Printf("Duration: %vms\n", elapsed.Milliseconds())
+	fmt.Printf("Duration: %v\n", elapsed)
 }
